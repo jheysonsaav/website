@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "personal-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,6 +7,14 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
+  },
+  "author": {
+    "name": "Jheyson Saavedra",
+    "email": "JheysonDev@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JheysonSaavedra/WebSite.git"
   },
   "dependencies": {
     "core-js": "^3.6.5",
