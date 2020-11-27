@@ -43,16 +43,7 @@ class Layout extends React.Component<LayoutProps> {
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap"
             rel="stylesheet"
           />
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTR5908LH2"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-MTR5908LH2');
-          </script>
-      </Head>
+        </Head>
         <Navigation />
         <main className={this.props.className || this.props.title}>
           {this.props.children}
