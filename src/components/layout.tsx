@@ -13,6 +13,18 @@ class Layout extends React.Component<LayoutProps> {
             name="description"
             content={this.props.description || "Description undefined"}
           />
+          <meta
+            name="keywords"
+            content="JheysonDev, JheysonDeb website, Jheyson Saavedra"
+          />
+          <meta name="author" content="Jheyson Saavedra" />
+          <meta name="robots" content="index, follow" />
+          <meta name="copyright" content="Jheyson Saavedra" />
+          <meta name="theme-color" content="#5294e2" />
+          <meta name="color-scheme" content="dark" />
+          <meta property="og:title" content="JheysonDev Website" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="http://jheysondev.vercel.app" />
           <link
             rel="stylesheet"
             href="https://necolas.github.io/normalize.css/latest/normalize.css"

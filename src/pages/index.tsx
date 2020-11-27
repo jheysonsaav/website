@@ -5,7 +5,10 @@ import React from "react";
 class Home extends React.Component {
   render() {
     return (
-      <Layout title="Home">
+      <Layout
+        title="Home"
+        description="this is the home page of my wonderful website"
+      >
         <h1>Esta pagina se encuentra en desarrollo</h1>
       </Layout>
     );
