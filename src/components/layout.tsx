@@ -25,6 +25,8 @@ class Layout extends React.Component<LayoutProps> {
           <meta property="og:title" content="JheysonDev Website" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="http://jheysondev.vercel.app" />
+          <meta property="og:description" content={this.props.description} />
+          <meta property="og:image" content="/img/logo.png" />
           <link
             rel="stylesheet"
             href="https://necolas.github.io/normalize.css/latest/normalize.css"
