@@ -1,8 +1,9 @@
-import '../styles/globals.css'
-import {AppProps} from "next/app"
+/* -- Copyright (C) JheysonDev ~ All right reserved -- */
+import "@/styles/styles.scss";
+import { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function Website({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default Website;
