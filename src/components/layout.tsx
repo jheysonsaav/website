@@ -15,7 +15,7 @@ class Layout extends React.Component<LayoutProps> {
           />
           <meta
             name="keywords"
-            content="JheysonDev, JheysonDeb website, Jheyson Saavedra"
+            content="JheysonDev, JheysonDev website, Jheyson Saavedra"
           />
           <meta name="author" content="Jheyson Saavedra" />
           <meta name="robots" content="index, follow" />
@@ -26,7 +26,14 @@ class Layout extends React.Component<LayoutProps> {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="http://jheysondev.vercel.app" />
           <meta property="og:description" content={this.props.description} />
-          <meta property="og:image" content="/img/logo.png" />
+          <meta
+            property="og:image"
+            content="https://jheysondev.vercel.app/_next/image?url=%2Fimg%2Flogo.jpg&w=384&q=75"
+          />
+          <meta name="twitter:creator" content="@jheysonDev" />
+          <meta name="twitter:site" content="@JheysonDev" />
+          <meta name="twitter:card" content="summary_large_image" />
+
           <link
             rel="stylesheet"
             href="https://necolas.github.io/normalize.css/latest/normalize.css"
@@ -36,7 +43,16 @@ class Layout extends React.Component<LayoutProps> {
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap"
             rel="stylesheet"
           />
-        </Head>
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-MTR5908LH2"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-MTR5908LH2');
+          </script>
+      </Head>
         <Navigation />
         <main className={this.props.className || this.props.title}>
           {this.props.children}
