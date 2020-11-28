@@ -4,6 +4,7 @@ nav.nav_containner {
   position: sticky;
   top: 0;
   background: #2d323d;
+  box-shadow: 3px 3px 5px $color_shadow;
   * {
     margin: 0;
     padding: 0;

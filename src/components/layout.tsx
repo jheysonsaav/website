@@ -35,11 +35,13 @@ class Layout extends React.Component<LayoutProps> {
           <meta name="twitter:card" content="summary_large_image" />
 
           <link
+            async
             rel="stylesheet"
             href="https://necolas.github.io/normalize.css/latest/normalize.css"
           />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link async rel="preconnect" href="https://fonts.gstatic.com" />
           <link
+            async
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap"
             rel="stylesheet"
           />
