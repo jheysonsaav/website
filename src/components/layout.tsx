@@ -8,7 +8,7 @@ class Layout extends React.Component<LayoutProps> {
     return (
       <>
         <Head>
-          <title>{`${this.props.title} - JheysonDev`}</title>
+          <title>{`${this.props.title} - JheysonDev` || "JheysonDev"}</title>
           <meta
             name="description"
             content={this.props.description || "Description undefined"}
@@ -22,15 +22,16 @@ class Layout extends React.Component<LayoutProps> {
           <meta name="copyright" content="Jheyson Saavedra" />
           <meta name="theme-color" content="#5294e2" />
           <meta name="color-scheme" content="dark" />
-          <meta property="og:title" content="JheysonDev Website" />
+          <meta property="og:site_name" content="JheysonDev Website"/>
+          <meta property="og:title" content={this.props.title} />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="http://jheysondev.vercel.app" />
+          <meta property="og:url" content="https://jheysondev.tk" />
           <meta property="og:description" content={this.props.description} />
           <meta
             property="og:image"
-            content="https://jheysondev.vercel.app/_next/image?url=%2Fimg%2Flogo.jpg&w=384&q=75"
+            content="https://jheysondev.tk/_next/image?url=%2Fimg%2Flogo.jpg&w=384&q=75"
           />
-          <meta name="twitter:creator" content="@jheysonDev" />
+          <meta name="twitter:creator" content="@JheysonDev" />
           <meta name="twitter:site" content="@JheysonDev" />
           <meta name="twitter:card" content="summary_large_image" />
           <link
