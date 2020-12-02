@@ -7,13 +7,7 @@ class Projects extends Component {
   render() {
     return (
       <Layout title="Projects">
-        <ProjectCard title="jajaj" />
-        <ProjectCard title="jajaj" />
-        <ProjectCard title="jajaj" />
-        <ProjectCard title="jajaj" />
-        <ProjectCard title="jajaj" />
-        <ProjectCard title="jajaj" />
-        <ProjectCard title="jajaj" />
+         
       </Layout>
     );
   }

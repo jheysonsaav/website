@@ -1,7 +1,7 @@
 /* -- Copyright (C) JheysonDev ~ All right reserved -- */
 import React, { Component } from "react";
 
-class ProjectCard extends Component<ProjectProps> {
+class ProjectCard extends Component<ProjectCardProps> {
   render() {
     return (
       <>
