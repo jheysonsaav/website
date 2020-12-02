@@ -1,0 +1,14 @@
+div.project_card_containner {
+  display: block;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: $back_dark;
+}
+
+div.project_card_containner:hover {
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px $color_shadow;
+  transition-duration: 0.3s;
+}
