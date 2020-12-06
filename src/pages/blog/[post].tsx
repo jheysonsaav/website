@@ -10,7 +10,7 @@ async function Post() {
   let file_name = `../../../posts/${post}.md`;
 
   return (
-    <Layout title={post}>
+    <Layout title="Post">
       <ReactMarkdown children="# nosi" />
     </Layout>
   );
