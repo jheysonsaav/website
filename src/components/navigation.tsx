@@ -5,7 +5,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <nav className="nav_containner">
-        <ul>
+        <ul className="no-select">
           <li>
             <Link href="/">Home</Link>
           </li>

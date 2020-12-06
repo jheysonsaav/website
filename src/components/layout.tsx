@@ -22,7 +22,7 @@ class Layout extends React.Component<LayoutProps> {
           <meta name="copyright" content="Jheyson Saavedra" />
           <meta name="theme-color" content="#5294e2" />
           <meta name="color-scheme" content="dark" />
-          <meta property="og:site_name" content="JheysonDev Website"/>
+          <meta property="og:site_name" content="JheysonDev Website" />
           <meta property="og:title" content={this.props.title} />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://jheysondev.tk" />
@@ -38,14 +38,9 @@ class Layout extends React.Component<LayoutProps> {
             rel="stylesheet"
             href="https://necolas.github.io/normalize.css/latest/normalize.css"
           />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap"
-            rel="stylesheet"
-          />
         </Head>
         <Navigation />
-        <main className={this.props.className || this.props.title}>
+        <main className={this.props.className || "Page-null"}>
           {this.props.children}
         </main>
       </>

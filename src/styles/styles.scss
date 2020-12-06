@@ -1,24 +1,40 @@
 @import "./variables.scss";
 @import "./components/navigation.scss";
-@import "./components/ProjectCard.scss";
+@import "./components/project_card.scss";
 @import "./pages/Projects.scss";
 @import "./pages/about.scss";
+@import "./pages/pageNotFound.scss";
+
+@font-face {
+  font-family: "CaskaydiaCove Nerd Font";
+  src: url("../../public/fonts/Caskaydia\ Cove\ Nerd\ Font\ Complete.ttf"),
+    url("../../public/fonts/Caskaydia\ Cove\ Nerd\ Font\ Complete\ Mono.ttf"),
+    url("../../public/fonts/Caskaydia\ Cove\ Nerd\ Font\ Complete\ Mono\ Windows\ Compatible.ttf"),
+    url("../../public/fonts/Caskaydia\ Cove\ Nerd\ Font\ Complete\ Windows\ Compatible.ttf");
+}
 
 html,
 body {
   width: 100%;
   height: 100vh;
   background-color: $back_light;
-  font-family: Roboto, Lato, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "CaskaydiaCove Nerd Font", "Courier New", Courier, monospace;
   color: $font_color;
   font-size: 1rem;
 
-  a {
-    text-decoration: none;
-    color: $color_primary;
+  .no-select {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+  }
+
+  .color-primary,
+  .color-blue {
+    color: $color_primary;
+  }
+
+  a {
+    color: $color_primary;
   }
 }
