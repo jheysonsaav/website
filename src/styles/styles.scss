@@ -6,11 +6,8 @@
 @import "./pages/pageNotFound.scss";
 
 @font-face {
-  font-family: "CaskaydiaCove Nerd Font";
-  src: url("../../public/fonts/Caskaydia\ Cove\ Nerd\ Font\ Complete.ttf"),
-    url("../../public/fonts/Caskaydia\ Cove\ Nerd\ Font\ Complete\ Mono.ttf"),
-    url("../../public/fonts/Caskaydia\ Cove\ Nerd\ Font\ Complete\ Mono\ Windows\ Compatible.ttf"),
-    url("../../public/fonts/Caskaydia\ Cove\ Nerd\ Font\ Complete\ Windows\ Compatible.ttf");
+  font-family: "JetBrainsMono Nerd Font";
+  src: url("../../public/fonts/JetBrains\ Mono\ Regular\ Nerd\ Font\ Complete.ttf"), url("../../public/fonts/JetBrains\ Mono\ Bold\ Nerd\ Font\ Complete.ttf"), url("../../public/fonts/JetBrains\ Mono\ Italic\ Nerd\ Font\ Complete.ttf") 
 }
 
 html,
@@ -18,7 +15,7 @@ body {
   width: 100%;
   height: 100vh;
   background-color: $back_light;
-  font-family: "CaskaydiaCove Nerd Font", "Courier New", Courier, monospace;
+  font-family: "JetBrainsMono Nerd Font", "Courier New", Courier, monospace;
   color: $font_color;
   font-size: 1rem;
 
