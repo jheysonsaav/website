@@ -10,6 +10,20 @@
   src: url("../../public/fonts/JetBrains\ Mono\ Regular\ Nerd\ Font\ Complete.ttf"), url("../../public/fonts/JetBrains\ Mono\ Bold\ Nerd\ Font\ Complete.ttf"), url("../../public/fonts/JetBrains\ Mono\ Italic\ Nerd\ Font\ Complete.ttf") 
 }
 
+:root {
+  scrollbar-color: $back_dark $back_light !important;
+  scrollbar-width: auto !important;
+}
+
+::-webkit-scrollbar {
+  width: auto !important;
+  background: $back_light !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $back_dark !important;
+}
+
 html,
 body {
   width: 100%;
