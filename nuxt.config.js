@@ -9,6 +9,13 @@ export default {
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
+      { name: "author", content: "Jheyson Saavedra" },
+      { name: "robots", content: "index, follow" },
+      { name: "copyright", content: "Jheyson Saavedra" },
+      { name: "theme-color", content: "#5294e2" },
+      { name: "color-scheme", content: "dark" },
+      { properity: "og:site_name", content: "JheysonDev Website" },
+      { properity: "og:type", content: "website" },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
