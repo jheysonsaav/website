@@ -1,8 +1,8 @@
-import { AppProps } from "next/app";
-import "@/styles/main.scss";
+// Copyright (C) Jheyson Saavedra ~ All right reserved
+import type { AppProps } from "next/app";
 
 function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+	return <Component {...pageProps} />;
 }
 
 export default App;
