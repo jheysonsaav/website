@@ -1,7 +1,16 @@
+import Header from "@/components/Header";
+import Head from "next/head";
+
 function Home(): JSX.Element {
-	return (
-		<h1>Esta sitio web se encuentra en desarrollo, vuelva mas tarde.</h1>
-	)
+  return (
+    <div>
+      <Head>
+        <title>JheysonDev - I am a geek developer and this is my website</title>
+      </Head>
+      <Header />
+      <h1 className="text-red font-sans">lorem1000</h1>
+    </div>
+  );
 }
 
 export default Home;

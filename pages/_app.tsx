@@ -1,8 +1,8 @@
-// Copyright (C) Jheyson Saavedra ~ All right reserved
-import type { AppProps } from "next/app";
+import "tailwindcss/tailwind.css";
+import { AppProps } from "next/app";
 
-function App({ Component, pageProps }: AppProps) {
-	return <Component {...pageProps} />;
+function Website({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
 }
 
-export default App;
+export default Website;
