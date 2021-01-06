@@ -20,6 +20,25 @@ export default class WebsiteDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta name="robots" content="index, follow" />
+          <meta
+            name="keywords"
+            content="JheysonDev, Jheyson Saavedra, Developer, Blog, Technology"
+          />
+          <meta name="author" content="Jheyson Saavedra" />
+          <meta name="twitter:site" content="@JheysonDev" />
+          <meta name="twitter:creator" content="@JheysonDev" />
+          <meta
+            name="twitter:title"
+            content="JheysonDev - I am a geek developer and this is my website"
+          />
+          <meta property="og:locale" content="en_US" />
+          <meta property="og:type" content="website" />
+          <meta
+            property="og:site_name"
+            content="JheysonDev - I am a geek developer and this is my website"
+          />
+          <meta property="og:" content="" />
           <link rel="stylesheet" href="/fonts/JetBrainsMono.css" />
           <link rel="stylesheet" href="/fonts/Lato.css" />
         </Head>
