@@ -8,7 +8,7 @@ function Home(): JSX.Element {
         <title>JheysonDev - I am a geek developer and this is my website</title>
       </Head>
       <Header />
-      <h1 className="text-red font-sans">lorem1000</h1>
+      <h1 className="text-red">lorem1000</h1>
     </div>
   );
 }

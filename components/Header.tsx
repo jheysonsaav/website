@@ -1,6 +1,6 @@
 function Header(): JSX.Element {
 	return (
-		<nav className="font-mono bg-gray-800 sticky top-0 flex justify-center md:py-2 lg:py-3 shadow-lg">
+		<nav className="bg-gray-800 sticky top-0 flex justify-center md:py-2 lg:py-3 shadow-lg">
 			<div>
 				<ul className="flex justify-between md:space-x-4 lg:space-x-8 text-lg md:text-2 font-medium">
 					<li>

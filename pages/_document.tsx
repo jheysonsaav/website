@@ -18,7 +18,7 @@ export default class WebsiteDocument extends Document {
 
   render(): React.ReactElement {
     return (
-      <Html lang="en">
+      <Html lang="en" className="light">
         <Head>
           <meta name="robots" content="index, follow" />
           <meta
@@ -38,7 +38,6 @@ export default class WebsiteDocument extends Document {
             property="og:site_name"
             content="JheysonDev - I am a geek developer and this is my website"
           />
-          <meta property="og:" content="" />
           <link rel="stylesheet" href="/fonts/JetBrainsMono.css" />
           <link rel="stylesheet" href="/fonts/Lato.css" />
         </Head>
