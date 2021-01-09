@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Document, {
   Html,
   Head,
@@ -6,7 +6,7 @@ import Document, {
   NextScript,
   DocumentContext,
   DocumentInitialProps,
-} from "next/document";
+} from 'next/document';
 
 export default class WebsiteDocument extends Document {
   static async getInitialProps(

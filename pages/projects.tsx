@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
-import Header from "@/components/Header";
-import axios from "axios";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faHome, faCodeBranch } from "@fortawesome/free-solid-svg-icons";
+import React, { useEffect, useState } from 'react';
+import Header from '@/components/Header';
+import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faHome, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 
 function ProjectsPage(): JSX.Element {
   const [repos, setRepos] = useState([]);
 
   useEffect(() => {
     axios
-      .get("/api/projects")
+      .get('/api/projects')
       .then((response) => {
         setRepos(response.data.data);
       })
@@ -26,7 +26,9 @@ function ProjectsPage(): JSX.Element {
       <div className="grid grid-cols-1 gaps-4 md:grid-cols-4 sm:grid-cols-2">
         {repos.map((repo) => (
           <div key={repo.id} className="rounded-sm bg-gray-600 m-2">
-            <h1 className="underline text-blue-500 font-semibold">{repo.name}</h1>
+            <h1 className="underline text-blue-500 font-semibold">
+              {repo.name}
+            </h1>
             <div>
               <a
                 href={repo.html_url}
@@ -47,7 +49,7 @@ function ProjectsPage(): JSX.Element {
                 <FontAwesomeIcon icon={faCodeBranch} />
               </a>
             </div>
-            <p>{repo.description || "No description"}</p>
+            <p>{repo.description || 'No description'}</p>
           </div>
         ))}
       </div>
