@@ -41,7 +41,7 @@ export default class WebsiteDocument extends Document {
           <link rel="stylesheet" href="/fonts/JetBrainsMono.css" />
           <link rel="stylesheet" href="/fonts/Lato.css" />
         </Head>
-        <body className="font-mono text-gray-100 bg-gray-700">
+        <body className="text-gray-800 bg-gray-50 font-sans dark:text-gray-200 dark:bg-gray-700">
           <Main />
           <NextScript />
         </body>

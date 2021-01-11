@@ -7,7 +7,6 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-
       black: colors.black,
       white: colors.white,
       gray: colors.blueGray,
@@ -23,6 +22,7 @@ module.exports = {
       sans: [
         'Lato',
         '-apple-system',
+        'system-ui',
         'BlinkMacSystemFont',
         'Segoe UI',
         'Roboto',
