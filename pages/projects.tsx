@@ -2,23 +2,22 @@ import React, { useEffect, useState } from 'react';
 import Layout from '@/components/Layout';
 import ProjectCard from '@/components/ProjectCard';
 import RequestError from '@/components/RequestError';
-import axios from 'axios';
-import Image from 'next/image';
+import { getProjects } from 'src/services/projects';
 
 function ProjectsPage(): JSX.Element {
   const [repos, setRepos] = useState([]);
   const [error, setError] = useState('');
 
   useEffect(() => {
-    axios
-      .get('/api/projects')
-      .then((response) => {
-        setRepos(response.data);
-      })
-      .catch((err) => {
-        console.log(err);
-        setError('We have had problems obtaining the projects');
-      });
+    const projects = async () => {
+      const data = await getProjects()
+      if(data.data){
+        setRepos(data.data);
+      }else{
+        setError(data.message)
+      }
+    }
+    projects()
   }, []);
 
   return (
