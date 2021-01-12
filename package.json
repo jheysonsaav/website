@@ -21,6 +21,7 @@
     "autoprefixer": "^10.1.0",
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
+    "husky": "^4.3.7",
     "mongoose": "^5.11.10",
     "next": "10.0.4",
     "postcss": "^8.2.2",

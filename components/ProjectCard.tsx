@@ -18,13 +18,13 @@ function ProjectCard(props: ProjectCardProps): JSX.Element {
       key={props.id}
       className="rounded p-2 bg-white shadow hover:shadow-md md:shadow-lg md:hover:shadow-xl sm:shadow-md sm:hover:shadow-lg dark:bg-gray-600 transition ease-in-out duration-300"
     >
-      <h1 className="text-blue-500 font-medium text-lg select-all">
+      <h1 className="text-secondary-500 font-medium text-lg select-all">
         {props.name}
       </h1>
       <div>
         <a
           href={props.html_url}
-          className="px-1 text-indigo-400 hover:text-indigo-300"
+          className="px-1 text-secondary-400 hover:text-secondary-300"
         >
           <FontAwesomeIcon icon={faGithub} />
         </a>

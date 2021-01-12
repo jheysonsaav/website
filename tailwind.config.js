@@ -17,7 +17,9 @@ module.exports = {
       blue: colors.blue,
       indigo: colors.indigo,
       purple: colors.violet,
-      pink: colors.pink,
+      pink: colors.rose,
+      primary: colors.blue,
+      secondary: colors.rose,
     },
     fontFamily: {
       sans: ['Inter', ...defaultTheme.fontFamily.sans],
