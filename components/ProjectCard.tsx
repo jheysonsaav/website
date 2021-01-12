@@ -3,7 +3,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faHome, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 
 interface ProjectCardProps {
-  id: string;
+  id: number;
   name: string;
   full_name?: string;
   description: string;
@@ -19,19 +19,19 @@ function ProjectCard(props: ProjectCardProps): JSX.Element {
       <div>
         <a
           href={props.html_url}
-          className="px-1 text-indigo-400 hover:text-purple-500"
+          className="px-1 text-indigo-400 hover:text-indigo-300"
         >
           <FontAwesomeIcon icon={faGithub} />
         </a>
         <a
           href={props.homepage}
-          className="px-1 text-indigo-400 hover:text-purple-500"
+          className="px-1 text-indigo-400 hover:text-indigo-300"
         >
           <FontAwesomeIcon icon={faHome} />
         </a>
         <a
           href={props.git_url}
-          className="px-1 text-indigo-400 hover:text-purple-500"
+          className="px-1 text-indigo-400 hover:text-indigo-300"
         >
           <FontAwesomeIcon icon={faCodeBranch} />
         </a>

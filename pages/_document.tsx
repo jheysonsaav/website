@@ -28,6 +28,8 @@ export default class WebsiteDocument extends Document {
           <meta name="author" content="Jheyson Saavedra" />
           <meta name="twitter:site" content="@JheysonDev" />
           <meta name="twitter:creator" content="@JheysonDev" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:domain" content="jheysondev.tk" />
           <meta
             name="twitter:title"
             content="JheysonDev - I am a geek developer and this is my website"
@@ -38,8 +40,8 @@ export default class WebsiteDocument extends Document {
             property="og:site_name"
             content="JheysonDev - I am a geek developer and this is my website"
           />
-          <link rel="stylesheet" href="/fonts/JetBrainsMono.css" />
           <link rel="stylesheet" href="/fonts/Inter.css" />
+          <link rel="stylesheet" href="/fonts/JetBrainsMono.css" />
         </Head>
         <body className="h-screen text-gray-800 bg-gray-50 font-sans font-normal dark:text-gray-200 dark:bg-gray-700">
           <Main />

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Header from '@/components/Header';
+import Layout from '@/components/Layout';
 import ProjectCard from '@/components/ProjectCard';
 import axios from 'axios';
-import { Suspense } from 'react';
 
 function ProjectsPage(): JSX.Element {
   const [repos, setRepos] = useState([]);
@@ -17,8 +16,7 @@ function ProjectsPage(): JSX.Element {
   }, []);
 
   return (
-    <div className="text-center">
-      <Header />
+    <Layout title="This Projects - JheysonDev" className="text-center" header>
       <h1 className="text-blue-500 text-3xl font-medium pt-4 pb-2">
         Projects
       </h1>
@@ -29,10 +27,12 @@ function ProjectsPage(): JSX.Element {
             name={repo.name}
             full_name={repo.full_name}
             description={repo.description}
+            html_url={repo.html_url}
+            homepage={repo.homepage}
           />
         ))}
       </div>
-    </div>
+    </Layout>
   );
 }
 
