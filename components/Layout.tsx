@@ -23,11 +23,8 @@ function Layout(props: LayoutProps): JSX.Element {
         {props.description ? (
           <>
             <meta name="description" content={props.description} />
-            <meta
-              name="twitter:description"
-              property="og:description"
-              content={props.description}
-            />
+            <meta name="twitter:description" content={props.description} />
+            <meta property="og:description" content={props.description} />
           </>
         ) : (
           ''
@@ -35,11 +32,8 @@ function Layout(props: LayoutProps): JSX.Element {
         {props.title ? (
           <>
             <title>{props.title}</title>
-            <meta
-              name="twitter:title"
-              property="og:title"
-              content={props.title}
-            />{' '}
+            <meta name="twitter:title" content={props.title} />
+            <meta property="og:title" content={props.title} />
           </>
         ) : (
           ''
