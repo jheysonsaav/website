@@ -5,7 +5,12 @@ function ErrorPage(): JSX.Element {
   return (
     <Layout title="Page Not Found - JheysonDev" className="text-center" header>
       <div className="p-2 grid justify-center align-center items-center select-none">
-        <Image src="/img/page_not_found.svg" width="450" height="450" alt="Page Not Found JheysonDev" />
+        <Image
+          src="/img/page_not_found.svg"
+          width="450"
+          height="450"
+          alt="Page Not Found JheysonDev"
+        />
         <h1 className="text-gray-800 dark:text-gray-100 font-bold text-xl md:text-4xl">
           404 - Not Found
         </h1>

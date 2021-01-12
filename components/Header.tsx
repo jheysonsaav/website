@@ -23,7 +23,12 @@ function Header(): JSX.Element {
         <ul className="flex justify-between space-x-2 md:space-x-4 lg:space-x-8 select-none text-lg md:text-2 font-medium">
           {navItems.map((item: any) => (
             <li key={item.key}>
-              <a href={item.path} className="text-blue-500 text-semibold hover:text-blue-400 hover:scale-150 transition duration-200 ease-in-out">{item.name}</a>
+              <a
+                href={item.path}
+                className="text-blue-500 text-semibold hover:text-blue-400 hover:scale-150 transition duration-200 ease-in-out"
+              >
+                {item.name}
+              </a>
             </li>
           ))}
         </ul>

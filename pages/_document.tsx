@@ -40,6 +40,8 @@ export default class WebsiteDocument extends Document {
             property="og:site_name"
             content="JheysonDev - I am a geek developer and this is my website"
           />
+          <meta name="theme-color" content="#3B82F6" />
+          <meta name="color-scheme" content="light dark" />
           <link rel="stylesheet" href="/fonts/Inter.css" />
           <link rel="stylesheet" href="/fonts/JetBrainsMono.css" />
         </Head>

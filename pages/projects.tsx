@@ -17,9 +17,7 @@ function ProjectsPage(): JSX.Element {
 
   return (
     <Layout title="This Projects - JheysonDev" className="text-center" header>
-      <h1 className="text-blue-500 text-3xl font-medium pt-4 pb-2">
-        Projects
-      </h1>
+      <h1 className="text-blue-500 text-3xl font-medium pt-4 pb-2">Projects</h1>
       <div className="grid grid-cols-1 gap-1 sm:gap-2 md:gaps-4 md:grid-cols-4 sm:grid-cols-2">
         {repos.map((repo) => (
           <ProjectCard
