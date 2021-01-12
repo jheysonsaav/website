@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Header from '@/components/Header';
+import Header from 'src/components/Header';
 
 interface LayoutProps {
   title: string;

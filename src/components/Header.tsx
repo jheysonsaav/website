@@ -18,7 +18,7 @@ function Header(): JSX.Element {
   ];
 
   return (
-    <nav className="justify-center md:py-2 lg:py-3 sticky top-0 flex bg-white shadow-md dark:bg-gray-800 dark:shadow-lg">
+    <nav className="justify-center sticky top-0 flex bg-white shadow-md py-1.5 md:py-2 lg:py-3 dark:bg-gray-800 dark:shadow-lg">
       <div>
         <ul className="flex justify-between space-x-2 md:space-x-4 lg:space-x-8 select-none text-lg md:text-2 font-medium">
           {navItems.map((item: any) => (

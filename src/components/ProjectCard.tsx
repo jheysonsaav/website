@@ -16,7 +16,7 @@ function ProjectCard(props: ProjectCardProps): JSX.Element {
   return (
     <div
       key={props.id}
-      className="rounded p-2 bg-white shadow select-none hover:shadow-md md:shadow-lg md:hover:shadow-xl sm:shadow-md sm:hover:shadow-lg dark:bg-gray-600 transition ease-in-out duration-300"
+      className="rounded p-2 bg-white shadow select-none text-center hover:shadow-md md:shadow-lg md:hover:shadow-xl sm:shadow-md sm:hover:shadow-lg dark:bg-gray-600 transition ease-in-out duration-300"
     >
       <a href={props.homepage || props.html_url} className="text-secondary-500 font-medium text-lg select-all hover:underline" target="_blank">
         {props.name}

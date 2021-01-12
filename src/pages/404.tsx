@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Layout from '@/components/Layout';
+import Layout from 'src/components/Layout';
 
 function ErrorPage(): JSX.Element {
   return (

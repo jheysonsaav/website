@@ -7,7 +7,7 @@ async function Projects(req: NextApiRequest, res: NextApiResponse) {
 
   const repos = await axios.get(
     `https://api.github.com/users/${
-      process.env.GITHUB_USERNAME || 'JheysonSaa'
+      process.env.GITHUB_USERNAME || 'JheysonSaavedra' || 'JheysonDev'
     }/repos`
   );
 

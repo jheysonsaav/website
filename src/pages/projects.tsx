@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Layout from '@/components/Layout';
-import ProjectCard from '@/components/ProjectCard';
-import RequestError from '@/components/RequestError';
-import { getProjects } from 'src/services/projects';
+import Layout from 'src/components/Layout';
+import ProjectCard from 'src/components/ProjectCard';
+import RequestError from 'src/components/RequestError';
+import getProjects from 'src/services/projects';
 
 function ProjectsPage(): JSX.Element {
   const [repos, setRepos] = useState([]);
@@ -11,10 +11,10 @@ function ProjectsPage(): JSX.Element {
   useEffect(() => {
     const projects = async () => {
       const data = await getProjects()
-      if(data.data){
-        setRepos(data.data);
+      if(data[0]){
+        setRepos(data[0]);
       }else{
-        setError(data.message)
+        setError('We have had problems obtaining the projects')
       }
     }
     projects()
@@ -29,7 +29,7 @@ function ProjectsPage(): JSX.Element {
         />
       ) : (
         <>
-          <h1 className="text-blue-500 text-3xl font-medium pt-4 pb-2">
+          <h1 className="text-blue-500 text-3xl text-center font-medium pt-4 pb-2">
             Projects
           </h1>
           <div className="grid grid-cols-1 gap-2 px-2 sm:gap-2 md:gaps-4 md:grid-cols-4 sm:grid-cols-2">
