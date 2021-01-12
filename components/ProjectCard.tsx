@@ -14,8 +14,8 @@ interface ProjectCardProps {
 
 function ProjectCard(props: ProjectCardProps): JSX.Element {
   return (
-    <div key={props.id} className="rounded m-2 bg-white shadow hover:shadow-md md:shadow-lg md:hover:shadow-xl sm:shadow-md sm:hover:shadow-lg dark:bg-gray-600 transition ease-in-out duration-300">
-      <h1 className="text-blue-500 font-semibold text-lg select-all">{props.name}</h1>
+    <div key={props.id} className="rounded p-2 bg-white shadow hover:shadow-md md:shadow-lg md:hover:shadow-xl sm:shadow-md sm:hover:shadow-lg dark:bg-gray-600 transition ease-in-out duration-300">
+      <h1 className="text-blue-500 font-medium text-lg select-all">{props.name}</h1>
       <div>
         <a
           href={props.html_url}
@@ -36,7 +36,7 @@ function ProjectCard(props: ProjectCardProps): JSX.Element {
           <FontAwesomeIcon icon={faCodeBranch} />
         </a>
       </div>
-      <p className="text-gray-700 select-all">{props.description || 'No description'}</p>
+      <p className="text-gray-700 select-all dark:text-gray-200">{props.description || 'No description'}</p>
     </div>
   );
 }

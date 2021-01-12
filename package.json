@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "^12",
-    "yarn": "^1.20"
+    "node": ">=12",
+    "yarn": ">=1.20"
   },
   "scripts": {
     "dev": "next dev",
@@ -17,7 +17,6 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "@octokit/rest": "^18.0.12",
     "@types/dotenv": "^8.2.0",
     "autoprefixer": "^10.1.0",
     "axios": "^0.21.1",

@@ -18,7 +18,7 @@ export default class WebsiteDocument extends Document {
 
   render(): React.ReactElement {
     return (
-      <Html lang="en" className="light">
+      <Html lang="en" translate="no">
         <Head>
           <meta name="robots" content="index, follow" />
           <meta
@@ -39,9 +39,9 @@ export default class WebsiteDocument extends Document {
             content="JheysonDev - I am a geek developer and this is my website"
           />
           <link rel="stylesheet" href="/fonts/JetBrainsMono.css" />
-          <link rel="stylesheet" href="/fonts/Lato.css" />
+          <link rel="stylesheet" href="/fonts/Inter.css" />
         </Head>
-        <body className="text-gray-800 bg-gray-50 font-sans dark:text-gray-200 dark:bg-gray-700">
+        <body className="h-screen text-gray-800 bg-gray-50 font-sans font-normal dark:text-gray-200 dark:bg-gray-700">
           <Main />
           <NextScript />
         </body>
