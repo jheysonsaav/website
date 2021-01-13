@@ -5,12 +5,12 @@ import Image from 'next/image';
 function Home(): JSX.Element {
   return (
     <Layout header title="">
-      <div className="md:flex md:justify-evenly md:items-center md:my-8">
+      <div className="m-2 inline-block text-center md:flex md:justify-evenly md:items-center md:my-8">
         <Image
           src={`/logo.${'png' || 'svg' || 'ico'}`}
-          width={400}
-          height={400}
-          className="rounded-full"
+          width={350}
+          height={350}
+          className="rounded-full w-40 h-40"
         />
         <div className="text-center">
           <h1 className="text-gray-200 text-4xl font-bold">Jheyson Saavedra</h1>
