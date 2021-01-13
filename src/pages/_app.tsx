@@ -1,3 +1,4 @@
+// Copyright (C) Jheyson Saavedra ~ All right reserved.
 import 'tailwindcss/tailwind.css';
 import { AppProps } from 'next/app';
 import Head from 'next/head';

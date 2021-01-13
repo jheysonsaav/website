@@ -1,3 +1,4 @@
+// Copyright (C) Jheyson Saavedra ~ All right reserved.
 import Layout from 'src/components/Layout';
 
 function Home(): JSX.Element {

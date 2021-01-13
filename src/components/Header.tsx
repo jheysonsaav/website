@@ -1,3 +1,4 @@
+// Copyright (C) Jheyson Saavedra ~ All right reserved.
 function Header(): JSX.Element {
   const navItems = [
     {

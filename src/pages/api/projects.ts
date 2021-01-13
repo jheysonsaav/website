@@ -1,3 +1,4 @@
+// Copyright (C) Jheyson Saavedra ~ All right reserved.
 import { NextApiRequest, NextApiResponse } from 'next';
 import dotenv from 'dotenv';
 import axios from 'axios';

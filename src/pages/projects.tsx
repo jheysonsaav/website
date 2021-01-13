@@ -1,3 +1,4 @@
+// Copyright (C) Jheyson Saavedra ~ All right reserved.
 import React, { useEffect, useState } from 'react';
 import Layout from 'src/components/Layout';
 import ProjectCard from 'src/components/ProjectCard';
@@ -33,7 +34,7 @@ function ProjectsPage(): JSX.Element {
             Projects
           </h1>
           <div className="grid grid-cols-1 gap-2 px-2 sm:gap-2 md:gaps-4 md:grid-cols-4 sm:grid-cols-2">
-            {repos.map((repo) => (
+            {repos.map((repo: any) => (
               <ProjectCard
                 id={repo.id}
                 name={repo.name}

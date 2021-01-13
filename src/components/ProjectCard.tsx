@@ -1,3 +1,4 @@
+// Copyright (C) Jheyson Saavedra ~ All right reserved.
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCodeBranch, faStar } from '@fortawesome/free-solid-svg-icons';
 

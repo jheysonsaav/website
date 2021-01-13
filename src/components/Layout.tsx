@@ -1,3 +1,4 @@
+// Copyright (C) Jheyson Saavedra ~ All right reserved.
 import Head from 'next/head';
 import Header from 'src/components/Header';
 

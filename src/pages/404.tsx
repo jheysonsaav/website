@@ -1,3 +1,4 @@
+// Copyright (C) Jheyson Saavedra ~ All right reserved.
 import Image from 'next/image';
 import Layout from 'src/components/Layout';
 
