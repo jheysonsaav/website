@@ -10,7 +10,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write ."
+    "format": "prettier --check .",
+    "format:write": "prettier --write .",
+    "pre-commit": "yarn run format",
+    "pre-push": "yarn run format:write",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
@@ -21,7 +25,7 @@
     "autoprefixer": "^10.1.0",
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
-    "husky": "^4.3.7",
+    "husky": "^5.0.6",
     "mongoose": "^5.11.10",
     "next": "10.0.4",
     "postcss": "^8.2.2",
