@@ -13,7 +13,7 @@
     "test": "jest",
     "format": "prettier --check src/**/*.ts",
     "format:write": "prettier --write .",
-    "pre-commit": "yarn run format && yarn test",
+    "pre-commit": "yarn run format",
     "pre-push": "yarn run format:write",
     "postinstall": "husky install"
   },
