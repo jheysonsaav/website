@@ -3,7 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme'); // eslint-disable-line
 
 module.exports = {
   purge: [
-    './pages/**/*.{ts,js,tsx,jsx}',
+    './src/pages/**/*.{ts,js,tsx,jsx}',
     './src/components/**/*.{ts,js,tsx,jsx}',
   ],
   darkMode: 'media', // or 'media' or 'class'
