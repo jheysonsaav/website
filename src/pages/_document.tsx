@@ -45,6 +45,12 @@ export default class WebsiteDocument extends Document {
           <meta name="color-scheme" content="light dark" />
           <link rel="stylesheet" href="/fonts/Inter.css" />
           <link rel="stylesheet" href="/fonts/JetBrainsMono.css" />
+          <link
+            rel="search"
+            type="application/opensearchdescription+xml"
+            title="Jheyson Saavedra"
+            href="/opensearch.xml"
+          />
         </Head>
         <body className="h-screen text-gray-800 bg-gray-50 font-sans font-normal dark:text-gray-200 dark:bg-gray-700">
           <Main />
