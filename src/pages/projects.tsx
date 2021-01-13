@@ -11,14 +11,14 @@ function ProjectsPage(): JSX.Element {
 
   useEffect(() => {
     const projects = async () => {
-      const data = await getProjects()
-      if(data[0]){
+      const data = await getProjects();
+      if (data[0]) {
         setRepos(data[0]);
-      }else{
-        setError('We have had problems obtaining the projects')
+      } else {
+        setError('We have had problems obtaining the projects');
       }
-    }
-    projects()
+    };
+    projects();
   }, []);
 
   return (

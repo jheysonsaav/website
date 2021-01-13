@@ -2,7 +2,10 @@ const colors = require('tailwindcss/colors'); // eslint-disable-line
 const defaultTheme = require('tailwindcss/defaultTheme'); // eslint-disable-line
 
 module.exports = {
-  purge: ['./pages/**/*.{ts,js,tsx,jsx}', './src/components/**/*.{ts,js,tsx,jsx}'],
+  purge: [
+    './pages/**/*.{ts,js,tsx,jsx}',
+    './src/components/**/*.{ts,js,tsx,jsx}',
+  ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     colors: {

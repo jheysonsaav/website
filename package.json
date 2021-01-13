@@ -10,7 +10,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --check .",
+    "format": "prettier --check src/**/*.ts",
     "format:write": "prettier --write .",
     "pre-commit": "yarn run format",
     "pre-push": "yarn run format:write",
