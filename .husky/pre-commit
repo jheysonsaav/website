@@ -1,1 +1,2 @@
 yarn run pre-commit
+git add .
