@@ -1,19 +1,15 @@
 // Copyright (C) Jheyson Saavedra ~ All right reserved.
-import React, { ChangeEvent } from 'react'
+import React, { ChangeEvent } from 'react';
 import { useRouter } from 'next/router';
 import Layout from 'src/components/Layout';
 
 function SearchPage() {
   const { query: routerQuery, replace } = useRouter();
   const query =
-    (Array.isArray(routerQuery.q)
-      ? routerQuery.q[0]
-      : routerQuery.q) || '';
+    (Array.isArray(routerQuery.q) ? routerQuery.q[0] : routerQuery.q) || '';
 
   function handleSearchInput(event: ChangeEvent<HTMLInputElement>) {
-    const query = event.target.value
-      ? { q: event.target.value }
-      : undefined;
+    const query = event.target.value ? { q: event.target.value } : undefined;
     replace({
       pathname: '/search',
       query,

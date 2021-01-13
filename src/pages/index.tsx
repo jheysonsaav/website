@@ -1,7 +1,7 @@
 // Copyright (C) Jheyson Saavedra ~ All right reserved.
 import Layout from 'src/components/Layout';
 import Image from 'next/image';
-import {useRouter} from 'next/router'
+import { useRouter } from 'next/router';
 
 function Home(): JSX.Element {
   const { query } = useRouter();
