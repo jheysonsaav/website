@@ -23,14 +23,14 @@ function SearchPage() {
           ? `${query} - search - Jheyson Saavedra`
           : 'search - Jheyson Saavedra'
       }
-      className="flex items-center align-center justify-center mt-4"
+      className="flex items-center align-center justify-center h-full"
     >
-      <div className="bg-gray-600 text-gray-300 p-1 hover:border-gray-900 hover:shadow-lg ring-4 ring-gray-500 ring-opacity-50 rounded w-11/12 sm:w-3/4 md:w-2/3 lg:w-2/4 transition duration-500 ease-in-out">
+      <div className="bg-white text-gray-700 dark:bg-gray-600 dark:text-gray-300 focus:shadow-lg hover:shadow-lg ring-4 ring-gray-100 dark:ring-gray-500 dark:ring-opacity-50 rounded p-1 mt-4 w-11/12 sm:w-3/4 md:w-2/3 lg:w-2/4 transition duration-500 ease-in-out">
         <input
           type="text"
           name="searcher"
           id="query"
-          className="bg-transparent border-none w-full font-medium appearance-none"
+          className="block bg-transparent border-none w-full font-medium appearance-none outline-none"
           role="search"
           placeholder="Search..."
           value={query}

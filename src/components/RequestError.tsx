@@ -13,7 +13,7 @@ function RequestError(props: RequestErrorProps) {
       <h1 className="text-gray-800 font-semibold text-xl md:text-2xl dark:text-gray-100">
         {props.errrorTitle}
       </h1>
-      <p className="text-gray-800 dark:text-gray-200">
+      <p className="text-gray-700 dark:text-gray-200">
         {props.errorDescription}
       </p>
     </div>
