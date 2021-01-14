@@ -15,20 +15,17 @@ function SearchPage() {
       query,
     });
   }
+
   return (
     <Layout
       header
-      title={
-        query
-          ? `${query} - search - Jheyson Saavedra`
-          : 'search - Jheyson Saavedra'
-      }
+      title={query ? `${query} - search` : 'search'}
       className="flex items-center align-center justify-center h-full"
     >
-      <div className="bg-white text-gray-700 dark:bg-gray-600 dark:text-gray-300 focus:shadow-lg hover:shadow-lg ring-4 ring-gray-100 dark:ring-gray-500 dark:ring-opacity-50 rounded p-1 mt-4 w-11/12 sm:w-3/4 md:w-2/3 lg:w-2/4 transition duration-500 ease-in-out">
+      <form className="bg-white text-gray-700 dark:bg-gray-600 dark:text-gray-300 focus:shadow-lg hover:shadow-lg ring-4 ring-gray-100 dark:ring-gray-500 dark:ring-opacity-50 rounded p-1 mt-4 w-11/12 sm:w-3/4 md:w-2/3 lg:w-2/4 transition duration-500 ease-in-out">
         <input
           type="text"
-          name="searcher"
+          name="query"
           id="query"
           className="block bg-transparent border-none w-full font-medium appearance-none outline-none"
           role="search"
@@ -36,7 +33,7 @@ function SearchPage() {
           value={query}
           onChange={handleSearchInput}
         />
-      </div>
+      </form>
     </Layout>
   );
 }

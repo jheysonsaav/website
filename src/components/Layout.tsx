@@ -32,9 +32,15 @@ function Layout(props: LayoutProps): JSX.Element {
         )}
         {props.title ? (
           <>
-            <title>{props.title}</title>
-            <meta name="twitter:title" content={props.title} />
-            <meta property="og:title" content={props.title} />
+            <title>{`${props.title} - JheysonSaavedra`}</title>
+            <meta
+              name="twitter:title"
+              content={`${props.title} - JheysonSaavedra`}
+            />
+            <meta
+              property="og:title"
+              content={`${props.title} - JheysonSaavedra`}
+            />
           </>
         ) : (
           ''

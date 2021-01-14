@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function Home(): JSX.Element {
   return (
-    <Layout header title="">
+    <Layout header title="Home">
       <div className="m-3 inline-block text-center md:flex md:justify-evenly md:items-center md:my-8">
         <Image
           src={`/logo.${'png' || 'svg' || 'ico'}`}
