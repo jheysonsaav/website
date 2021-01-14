@@ -21,7 +21,7 @@ function Home(): JSX.Element {
           </span>
           <p className="text-gray-700 dark:text-gray-300 pt-3 max-w-md">
             I am a coffee lover fullstack programmer with experience in
-            technologies such as javascript, typescript, react, vue, go etc.
+            technologies such as JavaScript, typescript, react, vue, go etc.
           </p>
         </div>
       </div>
