@@ -12,15 +12,18 @@ async fn home() -> actix_web::Result<HttpResponse> {
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     // Get host and port envs
-    let host = env::var("HOST").unwrap_or(String::from("localhost"));
-    let port = env::var("PORT").unwrap_or(String::from("8080").parse().expect("port is not valid"));
+    let host: String = String::from("0.0.0.0");
+    let port: u16 = env::var("PORT")
+        .unwrap_or(String::from("8080"))
+        .parse()
+        .expect("port is not valid");
 
     HttpServer::new(|| {
         App::new()
             .service(actix_files::Files::new("/static/", "static/").show_files_listing())
             .service(home)
     })
-    .bind(format!("{}:{}", host, port).as_str())?
+    .bind((host, port))?
     .run()
     .await
 }
