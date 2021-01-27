@@ -1,0 +1,8 @@
+<%
+    include!("components/header.stpl");
+
+    match page_name {
+        "home" => include!("pages/home.stpl"),
+        _ => include!("pages/home.stpl"),
+    };
+%>
