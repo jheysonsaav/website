@@ -3,6 +3,6 @@
 
     match page_name {
         "home" => include!("pages/home.stpl"),
-        _ => include!("pages/home.stpl"),
+        _ => panic!("template not found"),
     };
 %>

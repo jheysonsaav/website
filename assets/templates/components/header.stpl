@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="<%= page_lang %>" translate="no">
 <head>
-    <title><%= page_meta.title %></title>
+    <title><%- format!("{} - Jheyson Saavedra", page_meta.title) %></title>
     <link rel="icon" href="<%= page_url %>/static/favicon.ico" />
 
     <meta charset="UTF-8" />
@@ -12,7 +12,7 @@
     <meta name="theme-color" content="#3B82F6" />
 
     <!-- General Tags -->
-    <meta name="title" content="<%= page_meta.title %>" />
+    <meta name="title" content="<%- format!("{} - Jheyson Saavedra", page_meta.title) %>" />
     <meta name="description" content="<%= page_meta.description %>" />
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="<%= page_meta.keywords %>" />
@@ -21,11 +21,11 @@
     <!-- Open Graph Tags -->
     <meta property="og:type" content="website" />
 		<meta property="og:site_name" content="Jheyson Saavedra" />
-    <meta property="og:title" content="<%= page_meta.title %>" />
+    <meta property="og:title" content="<%- format!("{} - Jheyson Saavedra", page_meta.title) %>" />
     <meta property="og:description" content="<%= page_meta.description %>" />
 
     <!-- Twitter Tags -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@JheysonDev" />
     <meta name="twitter:creator" content="@JheysonDev" />
 
@@ -51,4 +51,21 @@
     <link rel="preload" href="/static/fonts/JetBrainsMono/JetBrainsMono-Bold-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href="/static/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href="/static/fonts/JetBrainsMono/JetBrainsMono-ExtraBold-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
+    <!-- Styles -->
+    <style><%- page_styles.trim().split('\n').map(|line| line.trim()).collect::<Vec<&str>>().join("") %></style>
 </head>
+<header class="header">
+    <nav class="header-navigation">
+        <ul class="nav-items">
+            <% for item in nav_items {%>
+            <% let item_split: Vec<&str> = item.split(":").collect(); %>
+            <% let item_name = item_split[0]; %>
+            <% let item_link = item_split[1]; %>
+            <li class="nav-item">
+                <a href="<%= item_link %>"><%= item_name %></a>
+            </li>
+            <% } %>
+        </ul>
+    </nav>
+</header>
