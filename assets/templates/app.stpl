@@ -1,8 +1,10 @@
+<% include!("components/header.stpl"); %>
+<body id="root">
+<main class="page-<%= page_name %>">
 <%
-    include!("components/header.stpl");
-
     match page_name {
         "home" => include!("pages/home.stpl"),
         _ => panic!("template not found"),
     };
 %>
+</body>

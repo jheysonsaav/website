@@ -1,14 +1,13 @@
-<div class="pageHome">
-	<div class="about">
-		<div class="about__left">
-			<img src="/static/images/avatar.webp" alt="JheysonDev, Jheyson Saavedra, Avatar" class="aout__left--avatar" />
-		</div>
-		<div class="about__right">
-			<h1 class="about__right--name">Jheyson Saavedra</h1>
-			<span class="about__right--profession">Software Developer</span>
-			<p class="about__right--description">
-			I am a coffee lover fullstack programmer with experience in technologies such as JavaScript, typescript, react, vue, go etc.
-			</p>
-		</div>
+<div class="about">
+	<div class="about__left">
+		<img src="/static/images/avatar.webp" alt="Avatar of JheysonDev" class="about__left--avatar" />
+	</div>
+	<div class="about__right">
+		<h1 class="about__right--name">Jheyson Saavedra</h1>
+		<span class="about__right--profession">Software Developer</span>
+		<p class="about__right--description">
+		I am a coffee lover fullstack programmer with experience in technologies such as JavaScript, typescript, react, vue, go etc.
+		</p>
+	</div>
 	</div>
 </div>
