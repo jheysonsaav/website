@@ -23,11 +23,11 @@
 		<meta property="og:site_name" content="Jheyson Saavedra" />
     <meta property="og:title" content="<%- format!("{} - Jheyson Saavedra", page_meta.title) %>" />
     <meta property="og:description" content="<%= page_meta.description %>" />
-    <meta property="og:image" content="/static/images/web_developer.svg" />
+    <meta property="og:image" content="/static/images/web_image.png" />
 
     <!-- Twitter Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="/static/images/web_developer.svg" />
+    <meta name="twitter:image" content="/static/images/web_image.png" />
     <meta name="twitter:site" content="@JheysonDev" />
     <meta name="twitter:creator" content="@JheysonDev" />
 
