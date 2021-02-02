@@ -1,47 +1,77 @@
 header.header {
-	display: flex;
-	position:sticky;
-	padding: .6rem 0;
-	top: 0;
-	justify-content: center;
-	box-shadow: 0 5px 5px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
-	user-select: none;
-	background-color: $color-bluegray-100;
+  display: flex;
+  position: sticky;
+  padding: 0.6rem 0;
+  top: 0;
+  justify-content: center;
+  box-shadow: 0px 4px 40px 5px $color-bluegray-200;
+  user-select: none;
+  background-color: $color-bluegray-100;
 
-	@media (min-width: $size-sm) {
-		padding: .7rem 0;
-	}
+  @media (min-width: $size-sm) {
+    padding: 0.7rem 0;
+  }
 
-	@media (min-width: $size-md) {
-		padding: .8rem 0;
-	}
+  @media (min-width: $size-md) {
+    padding: 0.8rem 0;
+  }
 
-	@media (min-width: $size-lg) {
-		padding: .9rem 0;
-	}
+  @media (min-width: $size-lg) {
+    padding: 0.9rem 0;
+  }
 
-	@media (prefers-color-scheme: dark) {
-		background-color: $color-bluegray-800;
-	}
+  &.dark-mode {
+    background-color: $color-bluegray-800;
+  }
 
-	nav.header-navigation {
-		font-weight: 500;
-		ul.nav-items {
-			display: flex;
-			margin: 0;
-			padding: 0;
-			li.nav-item {
-				list-style: none;
-				padding: 0 10px;
-				a {
-					font-size: 1.1em;
-					color: $color-blue-500;
-					text-decoration: none;
-					&:hover {
-						color: $color-blue-400;	
-					}
-				}
-			}
-		}
-	}
+  nav.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    ul.header__navigation--items {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      li {
+        list-style: none;
+        padding: 0 0.6rem;
+        a {
+          text-decoration: none;
+          color: $color-blue-500;
+          font-weight: 500;
+          font-size: 1.09rem;
+          &:hover {
+            color: $color-blue-400;
+            animation: color 5ms ease-in-out;
+          }
+        }
+      }
+    }
+    ul.header__navigation--icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      li {
+        list-style: none;
+        align-items: center;
+        padding: 0 0.6rem;
+        a {
+          text-decoration: none;
+          color: $color-blue-500;
+          &:hover {
+            color: $color-blue-400;
+            animation: color 5ms ease-in-out;
+          }
+          & > svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
 }

@@ -11,8 +11,9 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: $color-bluegray-800;
+  background-color: $color-bluegray-50;
 
-  @media (prefers-color-scheme: dark) {
+  body.dark-mode {
     color: $color-bluegray-200;
     background-color: $color-bluegray-700;
   }
@@ -21,5 +22,11 @@ body {
   code {
     font-family: JetBrains Mono, Cascadia Code PL, source code pro,
       "Courier New", Courier, monospace;
+  }
+
+  ::selection,
+  ::-moz-selection {
+    color: $color-bluegray-100;
+    background-color: $color-blue-500;
   }
 }
