@@ -1,5 +1,8 @@
 // Copyright (C) Jheyson Saavedra ~ All right reserved.
-use actix_web::{error::InternalError, http::StatusCode, HttpResponse};
+pub mod error404;
+pub mod home;
+
+use actix_web::{error::InternalError, http::StatusCode, HttpRequest, HttpResponse};
 use sailfish::TemplateOnce;
 use std::env;
 
@@ -11,7 +14,7 @@ pub struct PageMeta {
 
 #[derive(TemplateOnce)]
 #[template(path = "app.stpl")]
-struct Page<'a> {
+struct PageProps<'a> {
     page_name: &'a str,
     page_lang: String,
     page_url: String,
@@ -41,15 +44,19 @@ pub fn get_scss_content(path: &str) -> grass::Result<String> {
     )
 }
 
-pub fn render(page_name: &str, page_meta: PageMeta) -> actix_web::Result<HttpResponse> {
+pub fn render_template(
+    page_name: &str,
+    page_meta: PageMeta,
+    _req: HttpRequest,
+) -> actix_web::Result<HttpResponse> {
     let styles_rute: String = format!("{}assets/scss/pages/{}.scss", get_current_dir(), page_name);
 
-    let template = Page {
+    let template = PageProps {
         page_name: page_name,
         page_lang: String::from("en"),
         page_url: String::from("http://localhost:8080"),
         page_meta: page_meta,
-        page_styles: get_scss_content(&styles_rute).expect("asd"),
+        page_styles: get_scss_content(&styles_rute).expect("Styles not found"),
         nav_items: vec![String::from("Home:/"), String::from("Projects:/projects")],
     };
 

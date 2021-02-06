@@ -4,6 +4,7 @@
 <%
     match page_name {
         "home" => include!("pages/home.stpl"),
+        "error404" => include!("pages/error404.stpl"),
         _ => panic!("template not found"),
     };
 %>

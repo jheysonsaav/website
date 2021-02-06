@@ -1,19 +1,8 @@
 // Copyright (C) Jheyson Saavedra ~ All right reserved.
-mod template;
+mod routes;
 
-use actix_web::{get, middleware, App, HttpResponse, HttpServer};
+use actix_web::{middleware, App, HttpServer};
 use std::env;
-
-#[get("/")]
-async fn home() -> actix_web::Result<HttpResponse> {
-    let page_meta = template::PageMeta {
-            title: String::from("Home"),
-            description: String::from("I am a geek developer and this is my website"),
-            keywords: String::from("JheysonDev, Jheyson Saavedra, Development, Rust, Deno, TypeScript, Sowftware, Design, Blog"),
-        };
-
-    return template::render("home", page_meta);
-}
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
@@ -28,7 +17,8 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .wrap(middleware::DefaultHeaders::new().header("Cache-Control", "max-age=31536000"))
             .service(actix_files::Files::new("/static", "static/").show_files_listing())
-            .service(home)
+            .service(routes::home::home_route)
+            .service(routes::error404::error404_route)
     })
     .bind((host, port))?
     .run()
