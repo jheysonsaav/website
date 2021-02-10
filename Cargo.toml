@@ -1,6 +1,8 @@
 [package]
 name = "website"
 version = "0.1.0"
+description = "This is personal website write in rust"
+license = "GPL-3.0"
 authors = ["Jheyson Saavedra <JheysonDev@outlook.com>"]
 edition = "2018"
 

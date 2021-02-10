@@ -1,5 +1,7 @@
 // Copyright (C) Jheyson Saavedra ~ All right reserved.
 mod routes;
+mod templates;
+mod utils;
 
 use actix_web::{middleware, App, HttpServer};
 use std::env;
@@ -17,8 +19,8 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .wrap(middleware::DefaultHeaders::new().header("Cache-Control", "max-age=31536000"))
             .service(actix_files::Files::new("/static", "static/").show_files_listing())
-            .service(routes::home::home_route)
-            .service(routes::error404::error404_route)
+            .service(routes::home_route)
+            .service(routes::error404_route)
     })
     .bind((host, port))?
     .run()

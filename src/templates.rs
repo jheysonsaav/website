@@ -1,11 +1,8 @@
-// Copyright (C) Jheyson Saavedra ~ All right reserved.
-pub mod error404;
-pub mod home;
-
+use crate::utils::{get_current_dir, get_scss_content};
 use actix_web::{error::InternalError, http::StatusCode, HttpRequest, HttpResponse};
 use sailfish::TemplateOnce;
-use std::env;
 
+/// this structure is used in the head of the template
 pub struct PageMeta {
     pub title: String,
     pub description: String,
@@ -17,31 +14,9 @@ pub struct PageMeta {
 struct PageProps<'a> {
     page_name: &'a str,
     page_lang: String,
-    page_url: String,
     page_meta: PageMeta,
     page_styles: String,
     nav_items: Vec<String>,
-}
-
-pub fn get_current_dir() -> String {
-    if let Ok(current_directory) = env::current_dir() {
-        let mut current_directory: String = current_directory.to_str().unwrap_or("").to_string();
-
-        if !current_directory.ends_with("/") {
-            current_directory.push_str("/");
-        }
-
-        current_directory
-    } else {
-        String::new()
-    }
-}
-
-pub fn get_scss_content(path: &str) -> grass::Result<String> {
-    grass::from_path(
-        path,
-        &grass::Options::default().style(grass::OutputStyle::Compressed),
-    )
 }
 
 pub fn render_template(
@@ -54,7 +29,6 @@ pub fn render_template(
     let template = PageProps {
         page_name: page_name,
         page_lang: String::from("en"),
-        page_url: String::from("http://localhost:8080"),
         page_meta: page_meta,
         page_styles: get_scss_content(&styles_rute).expect("Styles not found"),
         nav_items: vec![String::from("Home:/"), String::from("Projects:/projects")],
