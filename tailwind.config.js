@@ -5,6 +5,10 @@ module.exports = {
   purge: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   darkMode: "class",
   theme: {
+    colors: {
+      gray: colors.blueGray,
+      blue: colors.blue,
+    },
     extend: {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],

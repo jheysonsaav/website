@@ -1,11 +1,12 @@
 import Head from "next/head";
-import Navigation from "@/components/navigation";
+import Navigation from "@/components/Header";
 
 interface LayoutProps {
   title: string;
   defaultTitle?: false | boolean;
   description?: string;
   keywords?: string;
+  className?: string;
   header?: true | boolean;
   children?: React.ReactNode;
 }
@@ -65,7 +66,7 @@ function Layout(props: LayoutProps): JSX.Element {
         />
       </Head>
       {props.header ? <Navigation /> : null}
-      <main>{props.children}</main>
+      <main className={props.className || ""}>{props.children}</main>
     </>
   );
 }

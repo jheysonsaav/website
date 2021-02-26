@@ -16,7 +16,7 @@ class MyDocument extends Document {
     return (
       <Html translate="no" lang="en">
         <Head />
-        <body className="font-sans font-normal text-gray-800 bg-gray-50">
+        <body className="h-screen font-sans font-normal text-gray-800 bg-gray-50 dark:text-gray-200 dark:bg-gray-700">
           <Main />
           <NextScript />
         </body>
