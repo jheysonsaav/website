@@ -1,6 +1,7 @@
-import Layout from "../components/Layout";
+import Layout from "@/components/templates/default";
 import Image from "next/image";
 import Link from "next/link";
+import Alert from "@/components/molecules/alert";
 
 function Home() {
   return (
@@ -34,6 +35,10 @@ function Home() {
           </p>
         </div>
       </div>
+      <div>
+        <h1 className="font-bold text-2xl">Projects</h1>
+      </div>
+      <Alert color="fuchsia">Lorem ipsum dolor sit</Alert>
     </Layout>
   );
 }

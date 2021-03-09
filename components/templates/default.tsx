@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navigation from "@/components/Header";
+import Header from "@/components/organisms/header";
 
 interface LayoutProps {
   title: string;
@@ -65,7 +65,7 @@ function Layout(props: LayoutProps): JSX.Element {
           crossOrigin="anonymous"
         />
       </Head>
-      {props.header ? <Navigation /> : null}
+      {props.header ? <Header /> : null}
       <main className={props.className || ""}>{props.children}</main>
     </>
   );
