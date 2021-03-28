@@ -1,13 +1,11 @@
-import Layout from "@/components/templates/default";
+import Layout from "@/components/Layout";
 import Image from "next/image";
 import Link from "next/link";
-import Alert from "@/components/molecules/alert";
 
 function Home() {
   return (
     <Layout
       title="Home"
-      header
       className="flex flex-col lg:flex-row flex-wrap justify-center items-center mt-4"
     >
       <div className="px-4">
@@ -35,10 +33,6 @@ function Home() {
           </p>
         </div>
       </div>
-      <div>
-        <h1 className="font-bold text-2xl">Projects</h1>
-      </div>
-      <Alert color="fuchsia">Lorem ipsum dolor sit</Alert>
     </Layout>
   );
 }

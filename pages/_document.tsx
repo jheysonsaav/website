@@ -15,8 +15,31 @@ class MyDocument extends Document {
   render() {
     return (
       <Html translate="no" lang="en">
-        <Head />
-        <body className="h-screen font-sans font-normal text-gray-800 bg-gray-50 dark:text-gray-200 dark:bg-black-700">
+        <Head>
+          <link rel="stylesheet" href="/fonts/Inter/inter.css" />
+          <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/fonts/Inter/Inter-Regular.woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/fonts/Inter/Inter-Medium.woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href="/fonts/Inter/Inter-Bold.woff2"
+            crossOrigin="anonymous"
+          />
+        </Head>
+        <body className="font-sans font-normal text-gray-800">
           <Main />
           <NextScript />
         </body>
