@@ -10,21 +10,21 @@ function Header(): JSX.Element {
         <ul className="flex space-x-4">
           <li>
             <Link href="/">
-              <a className="font-medium text-gray-600 hover:text-blue-500">
+              <a className="font-medium text-gray-600 hover:text-blue-500 transition duration-500 ease-in-out">
                 Home
               </a>
             </Link>
           </li>
           <li>
             <Link href="/projects">
-              <a className="font-medium text-gray-600 hover:text-blue-500">
+              <a className="font-medium text-gray-600 hover:text-blue-500 transition duration-500 ease-in-out">
                 Projects
               </a>
             </Link>
           </li>
           <li>
             <Link href="/blog">
-              <a className="font-medium text-gray-600 hover:text-blue-500">
+              <a className="font-medium text-gray-600 hover:text-blue-500 transition duration-500 ease-in-out">
                 Blog
               </a>
             </Link>
