@@ -1,13 +1,14 @@
-import { moveSync } from "https://deno.land/std@0.94.0/fs/mod.ts";
-
 const text = await Deno.readTextFile("import_map.json");
 const alephPath = JSON.parse(text).imports["aleph/"];
 
 const buildStatus = await Deno.run({
   cmd: [
     Deno.execPath(),
-    "run",
-    "--allow-all",
+    "--allow-net=deno.land,esm.sh,cdn.esm.sh",
+    "--allow-read",
+    "--allow-write",
+    "--allow-env",
+    "--allow-run",
     `${alephPath}cli.ts`,
     "build",
   ],
