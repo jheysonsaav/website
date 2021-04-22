@@ -6,7 +6,12 @@ const alephPath = JSON.parse(text).imports["aleph/"];
 const buildStatus = await Deno.run({
   cmd: [
     Deno.execPath(),
-    "--allow-all",
+    "run",
+    "--allow-net=deno.land,esm.sh,cdn.esm.sh",
+    "--allow-read",
+    "--allow-write",
+    "--allow-env",
+    "--allow-run",
     `${alephPath}cli.ts`,
     "build",
   ],
@@ -20,7 +25,7 @@ const startStatus = await Deno.run({
   cmd: [
     Deno.execPath(),
     "run",
-    "--allow-all",
+    "--allow-net=deno.land,esm.sh,cdn.esm.sh",
     `${alephPath}cli.ts`,
     "start",
     "--help",
