@@ -145,10 +145,10 @@ acorn@^7.1.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
-acorn@^8.0.5:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.1.0.tgz#52311fd7037ae119cbb134309e901aa46295b3fe"
-  integrity sha512-LWCF/Wn0nfHOmJ9rzQApGnxnvgfROzGilS8936rqN/lfcYkY9MYZzdMqN+2NJ4SlTc+m5HiSa+kNfDtI64dwUA==
+acorn@^8.1.0:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.1.1.tgz#fb0026885b9ac9f48bac1e185e4af472971149ff"
+  integrity sha512-xYiIVjNuqtKXMxlRMDc6mZUhXehod4a3gbZ1qRlM7icK4EbxUFNLhWoPblCvFtB2Y9CIqHP3CF/rdxLItaQv8g==
 
 ajv@^6.12.3:
   version "6.12.6"
@@ -813,13 +813,13 @@ jsbn@~0.1.0:
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
   integrity sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
 
-jsdom@^16.5.1:
-  version "16.5.1"
-  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-16.5.1.tgz#4ced6bbd7b77d67fb980e64d9e3e6fb900f97dd6"
-  integrity sha512-pF73EOsJgwZekbDHEY5VO/yKXUkab/DuvrQB/ANVizbr6UAHJsDdHXuotZYwkJSGQl1JM+ivXaqY+XBDDL4TiA==
+jsdom@^16.5.2:
+  version "16.5.3"
+  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-16.5.3.tgz#13a755b3950eb938b4482c407238ddf16f0d2136"
+  integrity sha512-Qj1H+PEvUsOtdPJ056ewXM4UJPCi4hhLA8wpiz9F2YvsRBhuFsXxtrIFAgGBDynQA9isAMGE91PfUYbdMPXuTA==
   dependencies:
     abab "^2.0.5"
-    acorn "^8.0.5"
+    acorn "^8.1.0"
     acorn-globals "^6.0.0"
     cssom "^0.4.4"
     cssstyle "^2.3.0"
@@ -841,7 +841,7 @@ jsdom@^16.5.1:
     webidl-conversions "^6.1.0"
     whatwg-encoding "^1.0.5"
     whatwg-mimetype "^2.3.0"
-    whatwg-url "^8.0.0"
+    whatwg-url "^8.5.0"
     ws "^7.4.4"
     xml-name-validator "^3.0.0"
 
@@ -1479,15 +1479,15 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vite-ssg@^0.9.1:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/vite-ssg/-/vite-ssg-0.9.1.tgz#a0232793bea1928d0f071888530ed023c6a5bc0c"
-  integrity sha512-8cNx7UDd2EaQrFX0jeW6pEE409I+x+JukBOfdPH/DLSE0otF8LnZq5tTFACwbGLRMVYqtDytWw3fnN2i2FnudQ==
+vite-ssg@^0.9.2:
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/vite-ssg/-/vite-ssg-0.9.2.tgz#eb7f0ac3ca2ac0dfd1802c4a788bbe15350d8826"
+  integrity sha512-iOYuagPYjJxKdD0gHENqsdg9nUGlAE1uzfeT4vbSX8/xpwKKZe1cA/VjgsyXwvmaB1wO10jlyzBt2w4l7vSy/g==
   dependencies:
     chalk "^4.1.0"
     fs-extra "^9.1.0"
     html-minifier "^4.0.0"
-    jsdom "^16.5.1"
+    jsdom "^16.5.2"
     prettier "^2.2.1"
     yargs "^16.2.0"
 
@@ -1565,7 +1565,7 @@ whatwg-mimetype@^2.3.0:
   resolved "https://registry.yarnpkg.com/whatwg-mimetype/-/whatwg-mimetype-2.3.0.tgz#3d4b1e0312d2079879f826aff18dbeeca5960fbf"
   integrity sha512-M4yMwr6mAnQz76TbJm914+gPpB/nCwvZbJU28cUD6dR004SAxDLOOSUaB1JDRqLtaOV/vi0IC5lEAGFgrjGv/g==
 
-whatwg-url@^8.0.0:
+whatwg-url@^8.0.0, whatwg-url@^8.5.0:
   version "8.5.0"
   resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-8.5.0.tgz#7752b8464fc0903fec89aa9846fc9efe07351fd3"
   integrity sha512-fy+R77xWv0AiqfLl4nuGUlQ3/6b5uNfQ4WAbGQVMYshCTCCPK9psC1nWh3XHuxGVCtlcDDQPQW1csmmIQo+fwg==
