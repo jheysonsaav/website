@@ -7,11 +7,7 @@ const buildStatus = await Deno.run({
   cmd: [
     Deno.execPath(),
     "run",
-    "--allow-net=deno.land,esm.sh,cdn.esm.sh",
-    "--allow-read",
-    "--allow-write",
-    "--allow-env",
-    "--allow-run",
+    "--allow-all",
     `${alephPath}cli.ts`,
     "build",
   ],
@@ -25,7 +21,7 @@ const startStatus = await Deno.run({
   cmd: [
     Deno.execPath(),
     "run",
-    "--allow-net=deno.land,esm.sh,cdn.esm.sh",
+    "--allow-all",
     `${alephPath}cli.ts`,
     "start",
     "--help",
