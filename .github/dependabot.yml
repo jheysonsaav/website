@@ -1,0 +1,33 @@
+version: 2
+registries:
+  npm-registry-npm-pkg-github-com:
+    type: npm-registry
+    url: https://npm.pkg.github.com/
+    token: "${{secrets.NPM_REGISTRY_NPM_PKG_GITHUB_COM_TOKEN}}"
+
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.41
+    - 15.0.0
+  - dependency-name: vite
+    versions:
+    - 2.2.1
+  - dependency-name: sass
+    versions:
+    - 1.32.11
+  - dependency-name: "@vitejs/plugin-vue"
+    versions:
+    - 1.2.1
+  - dependency-name: vite-ssg
+    versions:
+    - 0.9.2
+  registries:
+  - npm-registry-npm-pkg-github-com
